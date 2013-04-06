@@ -6,7 +6,3 @@ You'll need python installed, so go install it.
 Then, run 'python grabber.py'
 
 Or, open it up in IDLE and compile (on Windows)
-grabber
-=======
-
-Grabs mp3 files given apache indexes
