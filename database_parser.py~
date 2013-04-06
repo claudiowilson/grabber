@@ -1,8 +1,0 @@
-class database_parser(object):
-    def __init__(self, db_url):
-        self.db_list = []
-        self.db_list.append(db_url)
-    def add_url(self, db_url):
-        self.db_list.append(db_url)
-    def get_list(self):
-        print self.db_list
