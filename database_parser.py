@@ -25,6 +25,7 @@ class database_parser(object):
         pkl_file = open('mp3list.pkl','rb')
         self.mp3_list = pickle.load(pkl_file)
         pkl_file.close()
+    #Probably a shitty searching algorithm (goes through the WHOLE list), I'll have to update this
     def search(self, filename):
         data = []
         for s in self.mp3_list:
