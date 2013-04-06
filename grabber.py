@@ -1,17 +1,20 @@
 from database_parser import *
-database = ("http://www.chubbybeavers.com/wp-content/uploads/", "http://www.projektjunkies.com/pjsounds/")
+database = ("http://www.chubbybeavers.com/wp-content/uploads/", "http://www.projektjunkies.com/pjsounds/", "http://www.houseanthems.com/wp-content/uploads/")
 
 parsedatabase = database_parser()
 print 'Welcome to my blog mp3 grabber!'
 print 'Written by Claudio Wilson'
-s = raw_input("Would you like to update the mp3 database? Might take awhile (Y/n) ")
-if s == 'Y':
+update = raw_input("Would you like to update the mp3 database? Might take awhile (Y/n) ")
+if update == 'Y':
     for s in database:
         parsedatabase.add_urls(s)
     parsedatabase.save_mp3_list()
 else:
     parsedatabase.load_mp3_list()
 
-song = raw_input('What would you like to search for (song name works better than artist name) ')
+name = raw_input('What would you like to search for (song name works better than artist name) ')
 #print len(parsedatabase.get_db_list())
-print parsedatabase.search(song.lower())
+data = parsedatabase.search(name.lower())
+print '{:<30}'.format('Name') + '{:>50}'.format('URL')
+for songs in data:
+   print '{:<50}'.format(songs[1]).strip() + '{:>150}'.format(songs[0])
