@@ -1,6 +1,10 @@
 ## Grabber
 
-Grabs .mp3 files from a given Apache Index Directory
+Currently, just grabs .mp3 files from a given Apache Server Directory Listing
+
+I guess eventually the aim would be to be given a blog's URL, and then find the download links
+to the mp3's that the blogger blogs about.
+
 #How to Use:
 You'll need python installed, so go install it.
 Then, run `python grabber.py`
