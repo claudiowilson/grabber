@@ -1,5 +1,5 @@
 from database_parser import *
-database = ("http://www.chubbybeavers.com/wp-content/uploads/", "http://www.projektjunkies.com/pjsounds/", "http://www.houseanthems.com/wp-content/uploads/")
+database = ("http://www.chubbybeavers.com/wp-content/uploads/", "http://www.projektjunkies.com/pjsounds/", "http://www.houseanthems.com/wp-content/uploads/", "http://buymixtapes.com/upload/flamplayer_main/")
 
 parsedatabase = database_parser()
 print 'Welcome to my blog mp3 grabber!'
