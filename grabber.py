@@ -11,10 +11,10 @@ if update == 'Y':
     parsedatabase.save_mp3_list()
 else:
     parsedatabase.load_mp3_list()
-
+print 'There are currently ' + str(len(parsedatabase.get_mp3_list())) + ' songs in the database'
 name = raw_input('What would you like to search for (song name works better than artist name) ')
 #print len(parsedatabase.get_db_list())
 data = parsedatabase.search(name.lower())
-print '{:<30}'.format('Name') + '{:>50}'.format('URL')
+print 'Name' + '{:>150}'.format('URL')
 for songs in data:
-   print '{:<50}'.format(songs[1]).strip() + '{:>150}'.format(songs[0])
+    print songs[1].strip() + '{:>150}'.format(songs[0])
