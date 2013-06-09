@@ -7,6 +7,7 @@ to the mp3's that the blogger blogs about.
 
 #How to Use:
 You'll need python installed, so go install it.
+You'll also need lxml, so run `sudo apt-get install python-lxml`
 Then, run `python grabber.py`
 
 Or, open it up in IDLE and compile (on Windows)
